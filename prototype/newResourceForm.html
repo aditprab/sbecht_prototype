@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="jquery-1.11.2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+    <script src="bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'> 
+    <script src="jquery.confirm-master/jquery.confirm.js"></script>
+    <script src="scripts/confirmationBox.js"></script>
+  </head>
+<body>
+    <div id="navbar">
+      <nav role="navigation" class="navbar navbar-default">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+              <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a href="http://www.southbayendtrafficking.org/" class="navbar-brand"> South Bay Coalition to End Human Trafficking </a>
+          </div>
+          <div id="navbarCollapse" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                  <li><a href="userprofile.html"> Resource Guide</a></li>
+                  <li class="active"><a href="newResourceForm.html"> Submit New Resource </a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#"> Help </a></li>
+              </ul>
+          </div>
+      </nav>
+    </div>
+<!--     <div class="alert alert-danger" role="alert"> You didn't fill out a form element! </div>
+ -->
+    <div id="alertSpot">
+      <!-- Empty div where alert gets appended -->
+    </div>
+
+    <div id="guidePart2">
+      <div class="col-md-6 col-md-offset-3">
+        <form class="form-horizontal">
+            <h3> What's the name of your organization? </h3>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Organization Name" id="city">
+            </div>
+            <br> </br>
+            <h3> Category: <h3>
+              <select class="form-control">
+                  <option value="one"> Labor Trafficking </option>
+                  <option value="two"> Sex Trafficking </option>
+                  <option value-"three"> General Rehabilitation/Help </option>
+              </select>
+            <br> </br>
+            <h3> Type of Resource? </h3>
+                <select class="form-control">
+                  <option value="one"> Legal </option>
+                  <option value="two"> Shelter </option>
+                  <option value="three"> Other </option>
+                 </select>
+            <br> </br> 
+            <h3> Age range of typical client? </h3>
+                <select class="form-control">
+                <option value="one"> Minor </option>
+                <option value="three"> Adult </option>
+                <option value-"four"> Senior </option>
+                <option value-"any"> Any Age </option>
+              </select>
+            <br> </br>
+            <h3> Address: </h3>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Street, City, State, Zip Code" id="city">
+            </div>
+            <br></br>
+            <h3> Phone Number: </h3>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Enter phone number" id="num">
+            </div>
+
+            <br> </br>
+            <h3> Is any of this information confidential? </h3>
+            <div class="radio">
+                <label><input type="checkbox" name="checkbox"> Hide phone number. </label>
+              </div>
+              <div class="radio">
+                <label><input type="checkbox" name="optradio"> Hide address. </label>
+              </div>
+
+        </form>
+
+        <br> </br>
+         <div class="form-actions">
+              <div class="col-xs-offset-2 col-xs-10">
+                  <button type="submit" class="btn btn-primary" id="complexConfirm"> Submit Resource! </button>
+              </div>
+          </div>
+      </div>
+    </div>
+</body>
+</html>
