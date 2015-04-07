@@ -42,44 +42,177 @@
     <div id="guidePart2">
       <div class="col-md-6 col-md-offset-3">
         <form class="form-horizontal">
-            <h3> What's the name of your organization? </h3>
+            <h3> Organization Name </h3>
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Organization Name" id="city">
+                <input type="text" class="form-control" placeholder="Organization Name" id="orgname">
             </div>
             <br> </br>
-            <h3> Category: <h3>
-              <select class="form-control">
-                  <option value="one"> Labor Trafficking </option>
-                  <option value="two"> Sex Trafficking </option>
-                  <option value-"three"> General Rehabilitation/Help </option>
-              </select>
-            <br> </br>
-            <h3> Type of Resource? </h3>
-                <select class="form-control">
-                  <option value="one"> Legal </option>
-                  <option value="two"> Shelter </option>
-                  <option value="three"> Other </option>
-                 </select>
-            <br> </br> 
-            <h3> Age range of typical client? </h3>
-                <select class="form-control">
-                <option value="one"> Minor </option>
-                <option value="three"> Adult </option>
-                <option value-"four"> Senior </option>
-                <option value-"any"> Any Age </option>
-              </select>
-            <br> </br>
-            <h3> Address: </h3>
+
+            <h3> Main/Administrative Phone Number: </h3>
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Street, City, State, Zip Code" id="city">
+                <input type="text" class="form-control" placeholder="Enter adminsitrative phone number" id="mainNum">
+            </div>
+            <br> </br>
+
+            <h3> Referral/intake Phone Number: </h3>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Enter referral phone number" id="refNum">
+            </div>
+            <br> </br>
+
+            <h3> Website: </h3>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Website URL" id="website">
+            </div>
+            <br> </br>
+
+            <h3> Who is your point person/contact person? </h3>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Name" id="website">
+                <input type="text" class="form-control" placeholder="Title" id="title">
+                <input type="text" class="form-control" placeholder="Email" id="contactPersonEmail">
+                <input type="text" class="form-control" placeholder="Phone Number" id="contactPersonPhone">
+            </div>
+            <br> </br>
+
+
+            <h3> Misc. Contact Info </h3>
+            <div class="form-group">
+                <h4> How should someone who wishes to refer a client contact you? </h4>
+                <input type="text" class="form-control" id="referralContact">
+                <h4> How should a self-referring client contact you?</h4>
+                <input type="text" class="form-control"id="selfRefferalContact">
+            </div>
+            <br> </br>
+
+            <h3> Type of Organization: <h3>
+              <div class="form-group">
+              <select class="form-control">
+                  <option value="one"> Non-Profit </option>
+                  <option value="two"> Government </option>
+                  <option value-"three"> Faith-based </option>
+                  <option value-"four"> Private </option>
+                  <option value-"five"> Academic </option>
+              </select>
+              </div>
+            <br> </br>
+
+            <h3> Do you screen for human trafficking cases? </h3>
+                <div class="radio">
+                    <label><input type="radio" name="screenYes"> Yes </label>
+                    <br> </br>
+                    <label><input type="radio" name="screenNo"> No </label>
+                </div>
+              <br></br>
+            
+
+            <h3> What populations do you target/have specialized services for (check all that apply)? </h3>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="children"> Children ages 0-11 </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="adolescents"> Adolescents 12-17 </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="adults"> Adults 18+ </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="men"> Men </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="women"> Women </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="LGB"> LGB </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="transgender"> Transgedner </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="seniors"> Seniors </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="disabled"> People with Disabilities </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="wards"> Wards of Court </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="dependents"> Dependents of Court </label>
+              </div>
+            <br> </br>
+
+            <h3> Where are you located?: </h3>
+            <div class="form-group">
+                 <h4> City </h4>
+                <input type="text" class="form-control" placeholder="City" id="city">
+                <br> </br>
+                <h4> County </h4>
+                <input type="text" class="form-control" placeholder="Alameda, Contra Costa, Marin, Monterey, San Benito, San Francisco, San Mateo, Santa Cruz, Santa Clara, or Sonoma." id="county">
             </div>
             <br></br>
-            <h3> Phone Number: </h3>
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Enter phone number" id="num">
-            </div>
+            
+            <h3> Are you county specific? </h3>
+                <div class="radio">
+                    <label><input type="radio" Name="screenYes"> Yes </label>
+                    <br> </br>
+                    <label><input type="radio" name="screenNo"> No </label>
+                </div>
+              <br></br>
+            
 
+            <h3> Languages (check all that apply) </h3>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="English"> English </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Spanish"> Spanish </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Vietnamese"> Vietnamese </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Chinese Mandarin"> Chinese Mandarin </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Chinese Cantonese"> Chinese Cantonese </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Hindi"> Hindi </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Punjabi"> Punjabi </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Tagalog"> Tagalog </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Farsi"> Farsi </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Arabic"> Arabic </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="ASL"> ASL </label>
+                    <br> </br>
+                    <input type="text" class="form-control" placeholder="Other Language" id="city">
+              </div>
             <br> </br>
+
+            <h3> Do you accomodate services for people with special needs or disabilities?: </h3>
+              <div class="checkbox">
+                   <label><input type="checkbox" name="TTY"> TTY </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="wheelchair"> Wheelchair Access </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Services Pets"> Service Pets </label>
+                    <br> </br>
+              </div>
+            <br></br>
+
+
+            <h3> Are there eligibility requirements?</h3>
+              <div class="checkbox">
+                   <label><input type="checkbox" name="incomeLow"> Low income </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Medi-Cal recipients"> Medi-Cal recipients </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="In-county Residency"> In-County Residency </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="USLegalResidency"> US Legal Residency  </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Age-adults"> Age-Adults </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Age-minors"> Age-Minors </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Sober"> Must be sober or have already completed detox. </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="In-county Residency"> In-County Residency </label>
+                    <br> </br>
+                    <input type="text" class="form-control" placeholder="Other Requirements" id="otherRequirements">
+              </div>
+            <br></br>
+
             <h3> Is any of this information confidential? </h3>
             <div class="radio">
                 <label><input type="checkbox" name="checkbox"> Hide phone number. </label>
