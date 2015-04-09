@@ -20,7 +20,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
               </button>
-              <a href="http://www.southbayendtrafficking.org/" class="navbar-brand"> South Bay Coalition to End Human Trafficking </a>
+              <a href="http://www.southbayendtrafficking.org/" class="navbar-brand"> No Traffic Ahead </a>
           </div>
           <div id="navbarCollapse" class="collapse navbar-collapse">
               <ul class="nav navbar-nav">
@@ -42,6 +42,7 @@
     <div id="guidePart2">
       <div class="col-md-6 col-md-offset-3">
         <form class="form-horizontal">
+            
             <h3> Organization Name </h3>
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="Organization Name" id="orgname">
@@ -78,10 +79,8 @@
 
             <h3> Misc. Contact Info </h3>
             <div class="form-group">
-                <h4> How should someone who wishes to refer a client contact you? </h4>
-                <input type="text" class="form-control" id="referralContact">
                 <h4> How should a self-referring client contact you?</h4>
-                <input type="text" class="form-control"id="selfRefferalContact">
+                <input type="text" class="form-control"id="selfRefferalContact" placeholder="Email, referral phone number, or main phone number.">
             </div>
             <br> </br>
 
@@ -96,6 +95,29 @@
               </select>
               </div>
             <br> </br>
+
+            <h3> Who interacts with clients for an initial assessment? </h3>
+            <div class="checkbox">
+                     <label><input type="checkbox" name="profStaff"> Staff with a professional license (e.g., JD, LCSW)
+ </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="noProfStaff"> Staff without professional license
+ </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="volunteersWSupervision"> Volunteers with staff supervision </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="exclusivelyVolunteer"> Exclusively volunteer-operated </label>
+                    <br> </br>
+                    <input type="text" class="form-control" placeholder="Any other categories we may have missed" id="city">
+                    <br> </br>
+            </div>
+
+
+           <h3> Are you a member of a human trafficking coalition? </h3>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Website URL" id="website">
+                <br> </br>
+            </div>
 
             <h3> Do you screen for human trafficking cases? </h3>
                 <div class="radio">
@@ -134,10 +156,10 @@
 
             <h3> Where are you located?: </h3>
             <div class="form-group">
-                 <h4> City </h4>
-                <input type="text" class="form-control" placeholder="City" id="city">
+                 <h4> Cities (comma separated) </h4>
+                <input type="text" class="form-control" placeholder="San Jose, Santa Clara, San Francisco..." id="cities">
                 <br> </br>
-                <h4> County </h4>
+                <h4> County (comma separated) </h4>
                 <input type="text" class="form-control" placeholder="Alameda, Contra Costa, Marin, Monterey, San Benito, San Francisco, San Mateo, Santa Cruz, Santa Clara, or Sonoma." id="county">
             </div>
             <br></br>
@@ -214,6 +236,7 @@
             <br></br>
 
             <br> </br>
+      <hr> </hr>
       <h2> Crisis </h2>
       <hr> </hr>
             <br> </br>
@@ -287,13 +310,173 @@
                     <br> </br>
               </div>
 
+              <h3> Other </h3>
+              <div class="checkbox">
+                   <label><input type="checkbox" name="food"> Food </label>
+                    <br> </br>
+              
+                   <label><input type="checkbox" name="confidentialYes"> Case Management is confidential </label>
+                    <br> </br>
+              
 
+                   <label><input type="checkbox" name="survivorLed"> Survivor led services </label>
+                    <br> </br>
+              
 
+                   <label><input type="checkbox" name="crisisIntervention"> Crisis intervention </label>
+                    <br> </br>
+               
+                   <label><input type="checkbox" name="PeerCounseling"> Peer Counseling </label>
+                    <br> </br>
+              
+                   <label><input type="checkbox" name="safetyPlanning"> Safety Planning </label>
+                    <br> </br>
+                            
+                   <label><input type="checkbox" name="basicAmenities"> Basic amenities- sanitary supplies, clothes </label>
+                    <br> </br>
+              
+                   <label><input type="checkbox" name="callingCards"> Calling Cards or other methods of facilitating communication and/or reunification </label>
+                    <br> </br>
+              
+                   <label><input type="checkbox" name="trasportation"> Transportation such as to a safe location, medical/law enforcement appointments, shelter  </label>
+                    <br> </br>
+              
+                   <label><input type="checkbox" name="TROs"> Assistance or support with TROs, arranging civil stand-bys, protective orders</label>
+                    <br> </br>
+              
+                   <label><input type="checkbox" name="provideMedical"> Provide Emergency Medical Services</label>
+                    <br> </br>
+              
+                   <label><input type="checkbox" name="survivorLed"> Provide Emergency Dental Services </label>
+                    <br> </br>
+              
+                   <label><input type="checkbox" name="emergencyMedical"> Assist in connecting with Emergency Medical Services </label>
+                    <br> </br>
+              </div>
+     <hr> </hr>
+     <h2> Intermediate/Stabilization </h2>
+     <hr> </hr>
+            <h3> Which of these transitional services do you provide? </h3>
+            <br> </br>
 
+            <h3> Housing </h3>
+              <div class="checkbox">
+                   <label><input type="checkbox" name="adultMaleIntermediate"> Adult Male </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="adultFemaleIntermediate"> Adult Female </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="FamiliesIntermediate"> Families with dependents </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="areInfantsIntermediate"> Are infants permitted?</label>
+                    <br> </br>
+                    <label><input type="checkbox" name="unaccompaniedMinorMaleIntermediate"> Unaccompanied Minor Male </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="unaccompaniedMinorFemaleIntermediate"> Unaccompanied Minor Female</label>
+                    <br> </br>
+                    <label><input type="checkbox" name="LGBIntemediate"> LGB </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="transgenderIntermediate"> Trasngender </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="outofcountyIntermediate"> Out of County </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="outofstateIntermediate"> Out of State </label>
+                    <br> </br>
+              </div>
 
+            <h3> Other Services </h3>
+              <div class="checkbox">
+                   <label><input type="checkbox" name="rentAssistance"> Rent assistance</label>
+                    <br> </br>
+                    <label><input type="checkbox" name="financialSupportIndependentLiving"> Financial support for independent living. E.g., household items, furniture. </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="financialAssistanceForSchool"> Financial assistance for school supplies or job placement
+ </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="continuingTherapy"> Continuing therapy</label>
+                    <br> </br>
+                    <label><input type="checkbox" name="apptTransport"> Transportation to necessary appointments </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="accompanimentAdvocacySocialServices"> Accompaniment and advocacy to social services</label>
+                    <br> </br>
+                    <label><input type="checkbox" name="accompanimentAdvocacyLawEnforcement"> Accompaniment and advocacy with law enforcement </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="accompanimentAndAdvocacyForCourt"> Accompaniment and advocacy for court hearings
+ </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="accompanimentAndAdvocacyForCourtForLegalService"> Accompaniment and advocacy for legal service appointments </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="crimeVictimLegalAdvocate"> Crime Victim Legal Advocate
+ </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="legalAssistanceGen"> Legal assistance </label>
+                    <br> </br>
 
+                    <label><input type="checkbox" name="identityTheft"> Identity Theft Assistance </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="assistanceImmigration"> Assistance through an Immigration process (non-legal)</label>
+                    <br> </br>
+                    <label><input type="checkbox" name="medicalServices"> Medical Services </label>
+                    <br> </br>
+                   <label><input type="checkbox" name="substanceAbuse"> Substance Abuse Treatment/Services </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="dentalServices"> Dental Services </label>
+                    <br> </br>
+                     <label><input type="checkbox" name="survivorLedEfforts"> Survivor Led Efforts </label>
+                    <br> </br>
+                </div>
 
+    <hr> </hr>
+     <h2> Long Term </h2>
+     <hr> </hr>
+            <h3> Which of these long term services do you provide? </h3>
+            <br> </br>
+                  <div class="checkbox">
+                    <label><input type="checkbox" name="repatriation"> Repatriation </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="familyReunification"> Family reunification</label>
+                    <br> </br>
+                    <label><input type="checkbox" name="permHousing"> Permanent Housing
+                    </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="vocationalTraining"> Vocational training</label>
+                    <br> </br>
+                    <label><input type="checkbox" name="jobPlacement"> Job Placement, career building assistance </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="adultDiplomaEducation"> Adult Diploma/Education Support</label>
+                    <br> </br>
+                    <label><input type="checkbox" name="ESL"> ESL </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="parentingClasses"> Parenting classes
+                    </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="counseling">Counseling </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="supportGroups"> Support groups
+                    </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="transportationAssistance"> Transportation assistance  - bus passes, etc. </label>
+                    <br> </br>
 
+                    <label><input type="checkbox" name="legalAssistance"> Legal assistance </label>
+                    <br> </br>
+                </div>
+
+    <hr> </hr>
+      <h2> Final Questions </h2>
+    <hr> </hr>
+
+     <h3> If you provide services to HT survivors which have not already been mentioned, please explain: </h3>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Other Services (be brief but descriptive)" id="otherServices">
+            </div>
+            <br> </br>
+    <h3> Do you provide HT related trainings? </h3>
+            <div class="checkbox">
+                <label><input type="checkbox" name="toYourEmployees"> To your employees </label>
+                    <br> </br>
+                <label><input type="checkbox" name="toCommunity"> To the community </label>
+                    <br> </br>
+            </div>
 
 
 
@@ -305,7 +488,7 @@
         <br> </br>
          <div class="form-actions">
               <div class="col-xs-offset-2 col-xs-10">
-                  <button type="submit" class="btn btn-primary" id="complexConfirm"> Submit Resource! </button>
+                  <button type="submit" class="btn btn-primary" id="complexConfirm"> Submit Resource </button>
               </div>
           </div>
       </div>
