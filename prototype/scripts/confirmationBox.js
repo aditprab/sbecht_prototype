@@ -13,7 +13,6 @@ $(document).ready(function(){
     },
 
     cancel: function(button) {
-    	//
     },
     confirmButton: "Submit it!",
     cancelButton: "No, I will change.",
