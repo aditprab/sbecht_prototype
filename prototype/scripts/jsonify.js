@@ -41,6 +41,7 @@ var jsonify = function(){
             }
         });
     });
+    //change it back to the way it was
     $('div.checkbox').each(function(){
         if($(this).prev('h3')){
             category = mapToCategory[$(this).prev('h3').text()];
@@ -63,7 +64,6 @@ var jsonify = function(){
             category = mapToCategory[$(this).prev('h3').text()];
         $(this).children('label').each(function(i){
             if($(this).children('[type=radio]')[0].checked){
-                console.log('in checked radio')
                 object[category] = 1;
                 return;
             }
