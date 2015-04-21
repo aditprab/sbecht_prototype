@@ -1,0 +1,140 @@
+{
+	"general":
+	{
+		"contactInfo":
+		{
+			"organizationName" : String,
+			"mainPhoneLine" : String,
+			"referralPhoneLine" : String,
+			"24hoursCrisisLine" : String,
+			"textLine" : String,
+			"email": String,
+			"physicalAddress": String,
+			"website":String
+		},
+
+		"pointPerson":
+		{
+			"pointPersonName" : String,
+			"pointPersonTitle" : String,
+			"pointPersonPhone": String,
+			"pointPersonEmail":String,
+		},
+
+		"selfReferringClient":
+		{
+			"email": Boolean,
+			"referralNumber": Boolean,
+			"primaryNumber": Boolean,
+			"text": Boolean,
+			"walkIn": Boolean
+		},
+		"typeOfOrganization":
+		{
+			"nonProfit": Boolean,
+			"government": Boolean,
+			"faithBased": Boolean,
+			"private": Boolean,
+			"academic": Boolean,
+			"healthcare": Boolean
+		},
+		"whoInteractsWithClientsInitially":
+		{
+			"staffWithProfessionalLicense": Boolean,
+			"staffWithoutProfessionalLicense": Boolean,
+			"volunteersWithStaffSupervision": Boolean,
+			"onlyVolunteeers":Boolean,
+			"other": String
+		},
+		"memberOfHumanTraffickingCoalition": String,
+		"screenForHumanTrafficking":
+		{
+			"referCasesOut": Boolean,
+			"serveVictimsOfHumanTrafficking": Boolean,
+			"typeOfVictimsServed":
+			{
+				"adultLaborMale": Boolean,
+				"adultLaborFemale": Boolean,
+				"minorLaborMale": Boolean,
+				"minorLaborFemale": Boolean,
+				"adultSexTraffickingFemale": Boolean,
+				"adultSexTraffickingMale": Boolean,
+				"CSECFemale":Boolean,
+				"CSECMale":Boolean
+			},
+			"serveTransgenderFemales":Boolean,
+			"serveTransgenderMales":Boolean
+		},
+		"targetedPopulations":
+		{
+			"children": Boolean,
+			"adolescents": Boolean,
+			"youngAdults":Boolean,
+			"transitionAged":Boolean,
+			"adults":Boolean,
+			"men":Boolean,
+			"women":Boolean,
+			"LGB":Boolean,
+			"transgenderFemaleToMale":Boolean,
+			"transgenderMaleToFemale":Boolean,
+			"seniors":Boolean,
+			"peopleWithDisabilities":Boolean,
+			"wardsOfCourt":Boolean,
+			"dependentsOfCourt": Boolean,
+			"immigrants": Boolean,
+			"other": String,
+		},
+		"location":
+		{
+			"city":String,
+			"county": String
+		},
+		"languageCapacity":
+		{
+			"english":Boolean,
+			"spanish":Boolean,
+			"vietnamese":Boolean,
+			"mandarinChinese":Boolean,
+			"cantoneseChinese":Boolean,
+			"hindi":Boolean,
+			"punjabi":Boolean,
+			"tagalog":Boolean,
+			"farsi":Boolean,
+			"arabic":Boolean,
+			"americanSignLanguage":Boolean,
+			"burmese":Boolean,
+			"russian":Boolean,
+			"korean":Boolean,
+			"other":String,
+		},
+		"specialAccomodations":
+		{
+			"TTY":Boolean,
+			"Wheelchair":Boolean,
+			"serviceAnimals":Boolean,
+			"other":String
+		},
+		"eligibilityRequirements":
+		{
+			"lowIncome":Boolean,
+			"mediCalRecipient":Boolean,
+			"USLegalResidency":Boolean,
+			"inCountyResidency":Boolean,
+			"ageChildren":Boolean,
+			"ageAdolescents":Boolean,
+			"ageYoungAdults":Boolean,
+			"ageTransitionAgedYouth":Boolean,
+			"ageAdults":Boolean,
+			"referralFromSpecificAgency":String,
+			"soberDetox":Boolean,
+			"other":String
+		},
+		"serviceCategory":
+		{
+			"traumaInformed":Boolean,
+			"victimCentered":Boolean,
+			"confidential":Boolean,
+			"survivorLedInformed":Boolean
+		}
+	}
+}
