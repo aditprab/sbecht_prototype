@@ -1,0 +1,516 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+        <script src="../jquery-1.11.2.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../bootstrap-3.3.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/custom.css">
+        <script src="../bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+		<script src="scripts/scriptToResults.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+        <header>
+            <div id="navigation">
+            <a href="http://www.southbayendtrafficking.org/" style="float:left;"><img src="logo.jpg" style="width:70px;"></a>
+            <a href="http://www.southbayendtrafficking.org/" style="float:left;" > South Bay Coalition to End <br> Human Trafficking </a>
+            <a href="#"> Help </a>
+            <a href="#"> Submit New Resource </a>
+            <a href="#"> Resource Guide </a>
+            </div>
+        </header>
+        </div>
+
+
+        <div class="container1">
+        <hr> </hr>
+		<h1> User Profile </h1>
+		<hr> </hr>
+		  <div id="guidePart2">
+			 <div class="col-md-6 col-md-offset-3">
+			 <form action="results.html" class="form-horizontal">
+			    <h3> Who requires services? (check all that apply) </h3>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="children"> Children ages 0-11 </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="adolescents"> Adolescents 12-17 </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="adults"> Young Adults 18-21 </label>
+                    <br> </br>
+                     <label><input type="checkbox" name="adults"> Adults 21 and over</label>
+                    <br> </br>
+                    <label><input type="checkbox" name="men"> Male </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="women"> Female </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="LGB"> LGB </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="transgender"> Transgender, specify: &nbsp;&nbsp</label> <input type="text" class="form-control" placeholder="" id="transgender">
+                    <br> </br>
+                    <label><input type="checkbox" name="seniors"> Seniors </label> 
+                    <br> </br>
+                    <label><input type="checkbox" name="disabled"> People with Disabilities </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="wards"> Wards of Court </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="dependents"> Dependents of Court </label>
+                    <br></br>
+                    <label><input type="checkbox" name="immigrants"> Immigrants </label>
+                    <br></br>
+                    <label><input type="checkbox" name="other"> Other: &nbsp;&nbsp</label> <input type="text" class="form-control" placeholder="" id="other">
+              </div>
+            <br> </br>
+
+
+            <h3> Where would you prefer to receive services? Please specify county and city if possible.</h3>
+            <div class="form-group">
+                City (comma separated) <br>
+                <input type="text" class="form-control" placeholder="Santa Clara, etc. " id="cities">
+                <br> </br>
+                County (comma separated) <br>
+                <select>
+                    <option value="Alameda">Alameda</option>
+                    <option value="ContraCosta">ContraCosta</option>
+                    <option value="Marin">Marin</option>
+                    <option value="Monterey">Monterey</option>
+                    <option value="SanBenito">San Benito</option>
+                    <option value="SanFrancisco">San Francisco</option>
+                    <option value="SanMateo">San Mateo</option>
+                    <option value="SantaCruz">Santa Cruz</option>
+                    <option value="SantaClara">Santa Clara</option>
+                    <option value="Sonoma">Sonoma</option>
+                </select>
+            </div>
+            <br></br>
+
+           
+             <h3> Languages </h3>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="English"> English </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Spanish"> Spanish </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Vietnamese"> Vietnamese </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Chinese Mandarin"> Chinese Mandarin </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Chinese Cantonese"> Chinese Cantonese </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Hindi"> Hindi </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Punjabi"> Punjabi </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Tagalog"> Tagalog </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Farsi"> Farsi </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Arabic"> Arabic </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="ASL"> American Sign Language </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Burmese"> Burmese </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Russian"> Russian </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Korean"> Korean </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Other"> Other: &nbsp;&nbsp</label>
+                    <input type="text" class="form-control" placeholder="Other Language" id="otherlanguage">
+              </div>
+            <br> </br>
+
+             <h3> Do you require any of the following accommodations? </h3>
+              <div class="checkbox">
+                   <label><input type="checkbox" name="TTY"> TTY </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="wheelchair"> Wheelchair Access </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="ServicesAnimals"> Service Animals </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Other"> Other: &nbsp;&nbsp</label>
+                    <input type="text" class="form-control" placeholder="Other Accommodations" id="otheraccommodations">
+              </div>
+            <br></br>
+
+
+             <h3> Do any of the following eligibility requirements apply to you? Check all that apply.</h3>
+              <div class="checkbox">
+                   <label><input type="checkbox" name="incomeLow"> Low income </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Medi-Cal recipients"> Medi-Cal recipients </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="In-county Residency"> In-County Residency </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="USLegalResidency"> US Legal Residency  </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="children"> Age: Children (0-11) </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="adolescents">Age: Adolescents (12-17) </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="youngadults">Age: Young Adults (18-21) </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="transitionagedyouth">Age: Transition Aged Youth (18-24) </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="adults">Age: Adults (18 and over) </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="referral">Referral from specified agencies: &nbsp;&nbsp</label> <input type="text" class="form-control" placeholder="" id="referral">
+                    <br> </br>
+                    <label><input type="checkbox" name="Sober"> Must be sober or have already completed detox. </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="other"> Other: &nbsp;&nbsp </label>
+                    <input type="text" class="form-control" placeholder="Other Requirements" id="otherRequirements">
+              </div>
+            <br></br>
+            <br></br>
+
+           <hr></hr>
+            <h2>Do you require immediate services? </h2>
+            <hr></hr>
+            <h3> Which of the following immediate services do you require? </h3>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="hotline"> 24 hour hotline that is:</label><br>
+            	<DL>
+                <div class="checkbox">
+                    <DD><label><input type="checkbox" name="confidential"> Confidential </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Anonymous"> Anonymous </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="recorded?"> Is caller ID recorded? </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="capacityLanguage"> Can you field other languages than English?  </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="trauma-informed"> Trauma-informed </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="victimcentered"> Victim centered </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="24hour"> 24-hour Live answering </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="voicemail"> Caller must leave voicemail for callback </label>
+                    <br> </br>
+                </DL>
+                </div>
+            
+
+                <div class="checkbox">
+                    <label><input type="checkbox" name="shelter"> Shelter: </label><br>
+                <DL>
+                <div class="checkbox">
+                   <DD> <p><b>Who is seeking shelter? </b></p>
+                   <label><input type="checkbox" name="adultMale"> Adult Male </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="adultFemale"> Adult Female </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Families?"> Family with dependents </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="unaccompaniedMinorMale"> Unaccompanied Minor Male </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="unaccompaniedMinorFemale"> Unaccompanied Minor Female</label>
+                    <br> </br>
+                    <label><input type="checkbox" name="LGB"> LGB </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="transgender"> Trasngender </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="outofconty"> Out of County Resident</label>
+                    <br> </br>
+                    <label><input type="checkbox" name="outofstate"> Out of State Resident</label>
+                    <br> </br>
+                </DL>
+
+                <DL>
+                    <DD> <p><b>Do you require: </b></p>
+                    <label><input type="checkbox" name="confidentiallocation"> Confidential location</label>
+                    <br> </br>
+                    <label><input type="checkbox" name="emergencyhotel"> Emergency Hotel Stay</label>
+                    <br> </br>
+                    <label><input type="checkbox" name="lengthofstay"> Maximum Length of Stay: &nbsp;&nbsp</label> <input type="text" class="form-control" placeholder="in days" id="maximumlength">
+                    <br> </br>
+                </DL>
+
+                <DL>
+                    <div class="checkbox">
+                    <label><input type="checkbox" name="hotline"> Do you have any specific requirements for an in-person response? </label><br></br>
+                    <DD> <label><input type="checkbox" name="confidential"> Confidential </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="traumainformed"> Trauma Informed</label>
+                    <br> </br>
+                </DL>
+              </div>
+
+              <div class="checkbox">
+              	    <label><input type="checkbox" name="food"> Food </label>
+                    <br> </br>
+
+                   <label><input type="checkbox" name="caseManagement"> Case Management </label>
+                    <br> 
+                    <DL>
+                        <DD> <label><input type="checkbox" name="confidential"> Case Management needs to be confidential </label>
+                    </DL>
+                    <br> </br>
+
+                   <label><input type="checkbox" name="survivor-led"> Survivor-led Services </label>
+                    <br> </br>
+
+                    <label><input type="checkbox" name="crisisIntervention"> Crisis intervention </label>
+                    <br> </br>
+               
+                   <label><input type="checkbox" name="PeerCounseling"> Peer Counseling </label>
+                    <br> </br>
+              
+                   <label><input type="checkbox" name="safetyPlanning"> Safety Planning </label>
+                    <br> </br>
+                            
+                   <label><input type="checkbox" name="basicAmenities"> Basic amenities- sanitary supplies, clothes </label>
+                    <br> </br>
+              
+                   <label><input type="checkbox" name="callingCards"> Calling Cards or other methods of facilitating communication and/or reunification </label>
+                    <br> </br>
+              
+                   <label><input type="checkbox" name="trasportation"> Transportation such as to a safe location, medical/law enforcement appointments, shelter  </label>
+                    <br> </br>
+              
+                   <label><input type="checkbox" name="TROs"> Assistance or support with TROs, arranging civil stand-bys, protective orders</label>
+                    <br> </br>
+              
+                   <label><input type="checkbox" name="provideMedical"> Emergency Medical Services</label>
+                    <br> </br>
+              
+                   <label><input type="checkbox" name="survivorLed"> Emergency Dental Services </label>
+                    <br> </br>
+              
+                   <label><input type="checkbox" name="emergencyMedical"> Assistance in connecting with Emergency Medical Services </label>
+                    <br> </br>
+                </div>
+
+
+            <hr></hr>
+            <h2>Do you require any services that aid in stabilization? </h2>
+            <hr></hr>
+            <h3> Which of the following transitional services do you require? </h3>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="shelter"> Housing: </label><br>
+                <DL>
+                <div class="checkbox">
+                   <DD> <h4>Who is seeking housing? </h4>
+                   <label><input type="checkbox" name="adultMale"> Adult Male </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="adultFemale"> Adult Female </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="Families?"> Family with dependents </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="unaccompaniedMinorMale"> Unaccompanied Minor Male </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="unaccompaniedMinorFemale"> Unaccompanied Minor Female</label>
+                    <br> </br>
+                    <label><input type="checkbox" name="LGB"> LGB </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="transgender"> Trasngender </label>
+                    <br> </br>
+                    <label><input type="checkbox" name="outofconty"> Out of County Resident</label>
+                    <br> </br>
+                    <label><input type="checkbox" name="outofstate"> Out of State Resident</label>
+                    <br> </br>
+                </DL>
+                <DL>
+                    <DD> <h4> Do you require: </h4>
+                    <label><input type="checkbox" name="confidentiallocation"> Confidential location</label>
+                    <br> </br>
+                    <label><input type="checkbox" name="emergencyhotel"> Emergency Hotel Stay</label>
+                    <br> </br>
+                    <label><input type="checkbox" name="lengthofstay"> Maximum Length of Stay: &nbsp; </label> <input type="text" class="form-control" placeholder="in days" id="maximumlength">
+                    <br> </br>
+                </DL>
+
+                <label><input type="checkbox" name="rentalassistance"> Rental Assistance </label>
+                    <br> 
+                    <DL>
+                        <DD> <label><input type="checkbox" name="rent"> First Month's Rent </label>
+                        <br><br>
+                        <label><input type="checkbox" name="deposit"> Deposit </label>
+                        <br><br>
+                        <label><input type="checkbox" name="subsidy"> Subsidy for existing housing </label>
+                        <br><br>
+                    </DL>
+
+
+                <label><input type="checkbox" name="caseManagement"> Case Management </label>
+                    <br> 
+                    <DL>
+                        <DD> <label><input type="checkbox" name="confidential"> Confidential Case Management </label> 
+                        <br><br>
+                        <label><input type="checkbox" name="nonconfidential"> Non-Confidential Case Management </label>
+                    </DL>
+                    <br> </br>
+                <label><input type="checkbox" name="financialsupport"> Financial support for independent living, e.g. household items, furniture </label>
+                <br></br>
+                <label><input type="checkbox" name="financialassistance"> Financial support for school supplies or job placement </label>
+                <br></br>
+                <label><input type="checkbox" name="peercounseling"> Peer Counseling </label>
+                <br></br>
+                <label><input type="checkbox" name="therapy"> Continuing therapy </label>
+                <br></br>
+                <label><input type="checkbox" name="mentalhealth"> Mental Health </label>
+                <br></br>
+                <label><input type="checkbox" name="transportation"> Transportation to necessary appointments </label>
+                <br></br>
+                <label><input type="checkbox" name="accompaniment"> Accompaniment and advocacy </label>
+                <br>
+                <DL>
+                        <DD> <label><input type="checkbox" name="confidential"> Confidential Advcate </label> 
+                        <br><br>
+                        <label><input type="checkbox" name="nonconfidential"> Non-Confidential Advocate </label>
+                        <br><br>
+                        <label><input type="checkbox" name="attorney"> Crime Victim Rights Attorney </label>
+                        <br>
+                </DL>
+
+                <label><input type="checkbox" name="immigration"> Assistance through an Immigration process </label>
+                <br><br>
+                <label><input type="checkbox" name="medical"> Medical Services </label>
+                <br><br>
+                <label><input type="checkbox" name="substanceabuse"> Substance Abuse Treatment/Services </label>
+                <br><br>
+                <label><input type="checkbox" name="dental"> Dental Services </label>
+                <br><br>
+                <label><input type="checkbox" name="survivor-led-efforts"> Survivor-led efforts </label>
+                <br><br>
+
+                <hr></hr>
+                <h2>Do you require long term services? </h2>
+                <hr></hr>
+                <h3> Which of the following long-term services do you require? </h3>
+
+                <label><input type="checkbox" name="caseManagement"> Case Management </label>
+                    <br> 
+                    <DL>
+                        <DD> <label><input type="checkbox" name="confidential"> Confidential Case Management </label> 
+                        <br><br>
+                        <label><input type="checkbox" name="nonconfidential"> Non-Confidential Case Management </label>
+                    </DL>
+                    <br>
+
+                <label><input type="checkbox" name="financialassistance"> Financial Assistance </label>
+                <br><br>
+                <label><input type="checkbox" name="food"> Food/ Clothing Assistance </label>
+                <br><br>
+                <label><input type="checkbox" name="transportation"> Transportation Assistance - bus passes, etc. </label>
+                <br><br>
+
+                <label><input type="checkbox" name="rentalassistance"> Rental Assistance </label>
+                    <br> 
+                    <DL>
+                        <DD> <label><input type="checkbox" name="rent"> First Month's Rent </label>
+                        <br><br>
+                        <label><input type="checkbox" name="deposit"> Deposit </label>
+                        <br><br>
+                        <label><input type="checkbox" name="subsidy"> Subsidy for existing housing </label>
+                        <br><br>
+                    </DL>
+
+                <label><input type="checkbox" name="housing"> Permanent Housing </label>
+                <br><br>
+                <label><input type="checkbox" name="repatriation"> Repatriation </label>
+                <br><br>
+                <label><input type="checkbox" name="famreunification"> Family Reunification </label>
+                <br><br>
+                <label><input type="checkbox" name="training"> Vocational Training </label>
+                <br><br>
+                <label><input type="checkbox" name="Job Placement"> Job Placement, career building assistance </label>
+                <br><br>
+                <label><input type="checkbox" name="education"> Adult Diploma/Education Support </label>
+                <br><br>
+                <label><input type="checkbox" name="esl"> ESL </label>
+                <br><br>
+                <label><input type="checkbox" name="classes"> Parenting classes </label>
+                <br><br>
+                <label><input type="checkbox" name="therapy"> Tehrapy </label>
+                <br><br>
+                <label><input type="checkbox" name="mentalhealth"> Mental Health </label>
+                <br><br>
+                <label><input type="checkbox" name="support"> Support groups </label>
+                <br><br>
+                <label><input type="checkbox" name="Survivorleadership"> Survivor Leadership opportunities </label>
+                <br><br>
+                <label><input type="checkbox" name="mentorship"> Mentorship </label>
+                <br><br>
+
+                <hr></hr>
+                <h2>Do you require legal services? </h2>
+                <hr></hr><br>
+                <label><input type="checkbox" name="mentorship"> Yes, I do require legal assistance. </label>
+                <br>
+
+                <h3> If known, please specify the type of legal services you require below (optional) </h3>
+
+                <label><input type="checkbox" name="immigation"> Immigration </label>
+                <br>
+                <DL>
+                <DD><label><input type="checkbox" name="t-visa"> T-visa </label>
+                <br><br>
+                <label><input type="checkbox" name="u-visa"> U-visa</label>
+                <br><br>
+                <label><input type="checkbox" name="SIJS"> SIJS </label>
+                <br><br>
+                <label><input type="checkbox" name="vawa"> Job VAWA petitions </label>
+                <br><br>
+                <label><input type="checkbox" name="asylum"> Asylum </label>
+                <br><br>
+                <label><input type="checkbox" name="DAPA"> DAPA </label>
+                <br><br>
+                <label><input type="checkbox" name="daca"> DACA </label>
+                <br><br>
+                <label><input type="checkbox" name="familypetitions"> Family-based petitions</label>
+                <br><br>
+                <label><input type="checkbox" name="employment"> Employment Authorization </label>
+                <br><br>
+                <label><input type="checkbox" name="citizenship"> Adjustment of Status/ Naturalization Citizenship </label>
+                <br><br>
+                <label><input type="checkbox" name="removal"> Removal hearings & deportation proceedings </label>
+                <br><br>
+                 <label><input type="checkbox" name="other"> Other: &nbsp;&nbsp</label> <input type="text" class="form-control" placeholder="" id="other">
+                </DL><br>
+
+                <label><input type="checkbox" name="criminaldefense"> Criminal Defense</label>
+                <br><br>
+                <label><input type="checkbox" name="civilrestitution"> Civil Restitution</label>
+                <br><br>
+                <label><input type="checkbox" name="Restraining Orders"> Restraining Orders </label>
+                <br><br>
+                <label><input type="checkbox" name="family law"> Family Law </label>
+                <br><br>
+                <label><input type="checkbox" name="labor"> Labor & Employment </label>
+                <br><br>
+                <label><input type="checkbox" name="Expungement"> Expungement </label>
+                <br><br>
+                <label><input type="checkbox" name="housing"> Housing Law </label>
+                <br><br>
+                <label><input type="checkbox" name="Economic Benefits"> Economic Benefits</label>
+                <br><br>
+                <label><input type="checkbox" name="education"> Education Law </label>
+                <br><br>
+                <label><input type="checkbox" name="health care"> Health Care Law </label>
+                <br><br>
+                <label><input type="checkbox" name="guardianship"> Identity Theft </label>
+                <br><br>
+                <label><input type="checkbox" name="creditrepair"> Credit Repair</label>
+                <br><br>
+                <label><input type="checkbox" name="driverslicense"> Driver's License Reinstatement/Traffic Court</label>
+                <br><br>
+                <label><input type="checkbox" name="homeless"> Homeless Court</label>
+                <br><br>
+                <label><input type="checkbox" name="tax"> Tax Law </label>
+                <br><br>
+
+
+
+                <div class="form-actions">
+			        <div class="col-xs-offset-2 col-xs-10">
+			            <button type="submit" class="btn btn-primary"> Search </button>
+			        </div>
+			    </div>
+
+			</form>
+
+		    </div>
+        </div>
+		</div>
+	</body>
+</html>
