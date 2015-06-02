@@ -13,6 +13,7 @@ $(document).ready(function(){
     },
 
     cancel: function(button) {
+        console.log(jsonify());
     },
     confirmButton: "Submit it!",
     cancelButton: "No, I will change.",

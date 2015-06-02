@@ -6,22 +6,31 @@ var jsonify = function(){
     var object = {};
     /* maps headers (mark off groups) to values used as keys for the containing object */
     var mapToCategory = {
-        'Who interacts with clients for an initial assessment?':'who_initial',
-        'What populations do you target/have specialized services for (check all that apply)?':'targeted_populations',
+        'Who interacts with clients for an initial assessment?':'whoInteractsWithClientsInitially',
+        'What populations do you target/have specialized services for (check all that apply)?':'targetedPopulations',
         'Languages (check all that apply)':'languages',
-        'Do you accomodate services for people with special needs or disabilities?:':'disability_services',
-        'Are there eligibility requirements?':'eligibility_req',
+        'Do you accomodate services for people with special needs or disabilities?:':'specialAccomodations',
+        'Are there eligibility requirements?':'eligibilityRequirements',
         '24 hour hotline':'hotline',
-        'Shelter (specify who is eligible below)':'shelter_req',
-        'In-Person Response':'ip_response',
+        'Shelter (specify who is eligible below)':'shelterSpecifics',
+        'In-Person Response':'inPersonResponse',
         'Other':'other',
         'Housing':'housing',
         'Other Services':'other_services',
         'Do you provide HT related trainings?':'ht_training',
-        'Do you screen for human trafficking cases?':'ht_screen',
+        'Do you screen for human trafficking cases?':'screenForHumanTrafficking',
         'Are you county specific?':'county_specific',
-        'Who is your point person/contact person?':'point_person',
-        'Where are you located?:':'location'
+        'Who is your point person/contact person?':'pointPerson',
+        'Where are you located?:':'location',
+        'How should a self-referring client contact you?':'selfReferringClient',
+        'Are you a member of a human trafficking coalition?':'memberOfHumanTraffickingCoalition',    //value is string, not object
+        'What categories of service does your organization provide?':'serviceCategory',
+        '24 Hour Hotline':'24HourHotlineSpecifics',
+        'Other Shelter Specifications':'otherShelterSpecifications',
+        'Circumstances':'circumstances',
+        'Case Management':'caseManagement',
+        'Which Of These Long Term Services Do You Provide?':'longTermServices',
+        'Rental Assistance':'rentalAssistance'
     }
     var category;
     /* finds text input boxes */
