@@ -18,6 +18,10 @@
       {
         padding-bottom: 1em;
       }
+      .subheading
+      {
+        text-align: left;
+      }
     </style>
  </head>
 <body>
@@ -167,8 +171,14 @@
                   <br/>
                   <label><input type="checkbox" name="children">Serve Victims of Human Trafficking</label>
                   <br/>
-                  <h4>Categories of Victims Served</h4>
-                      <div class="checkbox subgroup">
+                  <label><input type="checkbox" name="serveTransgenderFemales">Transgender Females</label>
+                  <br/>
+                  <label><input type="checkbox" name="serveTransgenderMales">Transgender Males</label>
+                </div>
+                
+              <br/>
+              <h3>Categories of Victims Served</h3>
+                      <div class="checkbox">
                           <label><input type="checkbox" name="adultLaborFemale">Adult Female Laborer</label>
                           <br/>
                           <label><input type="checkbox" name="adultLaborMale">Adult Male Laborer</label>
@@ -186,12 +196,6 @@
                           <label><input type="checkbox" name="CSECMale">CSEC Male</label>
                           <br/>
                       </div>
-                  <label><input type="checkbox" name="serveTransgenderFemales">Transgender Females</label>
-                  <br/>
-                  <label><input type="checkbox" name="serveTransgenderMales">Transgender Males</label>
-                </div>
-                
-              <br/>
 <!-- targeted populations-->
             <h3>What populations do you target/have specialized services for? (check all that apply)</h3>
                 <div class="checkbox">
@@ -227,6 +231,7 @@
                     <br/>
                     <h4>A Population Not Previously Listed</h4>
                     <input type="text" class="form-control" placeholder="Population" id="other">
+                    <br/>
              </div>
             <br/>
 
@@ -237,6 +242,7 @@
                 <br/>
                 <h4>County</h4>
                 <input type="text" class="form-control" placeholder="Alameda, Contra Costa, Marin, Monterey, San Benito, San Francisco, San Mateo, Santa Cruz, Santa Clara, or Sonoma." id="county"/>
+                <br/>
            </div>
             <br></br>
 
@@ -281,7 +287,8 @@
                     <label><input type="checkbox" name="korean">Korean</label>
                     <br/>
                     <h4>A Language That We Did Not Previously List</h4>
-                    <input type="text" class="form-control" placeholder="Other Language" id="city">
+                    <input type="text" class="form-control" placeholder="Other Language" id="other">
+                    <br/>
              </div>
             <br/>
 
@@ -295,7 +302,8 @@
                     <br/>
                     <label><input type="checkbox" name="other">Other</label>
                     <br/>
-                    <input type="text" class="form-control" placeholder="Other accomodation" id="other">
+                    <h4>Other Accomodation</h4>
+                    <input type="text" class="form-control" placeholder="Other Accomodation" id="other">
                     <br/>
              </div>
             <br></br>
@@ -327,6 +335,7 @@
                     <br/>
                     <h4>Any Other Requirements</h4>
                     <input type="text" class="form-control" placeholder="Other Requirements" id="otherRequirements">
+                    <br/>
              </div>
             <br/>
             <h3>What categories of service does your organization provide?</h3>
@@ -447,7 +456,7 @@
                     <br/>
                    <label><input type="checkbox" name="inCountyOnly">In-County Only</label>
                     <br/>
-                    <h4>Gender Of Responder</h4>
+                    <h3 class="subheading">Gender Of Responder</h3>
                         <div class="checkbox subgroup">
                             <label><input type="checkbox" name="genderOfResponderMatchesGenderOfVictim">Gender Of Responder Matches Gender Of Victim</label>
                             <br/>
@@ -524,6 +533,7 @@
               <h4>Maximum Length Of Stay</h4>
               <input type="text" class="form-control" placeholder="What Is the Maximum Duration A Victim Can Occupy Housing Option" id="maximumLengthOfStay"/>
             </div>
+            <br/>
             <h3>Rental Assistance</h3>
             <div class="checkbox">
               <label><input type="checkbox" name="firstMonthsRent">Assistance With First Month's Rent</label>
@@ -556,7 +566,7 @@
                     <br/>
                     <label><input type="checkbox" name="transportationToNecessaryAppointments">Transportation To Necessary Appointments</label>
                     <br/>
-                    <h4>Accompaniment And Advocacy</h4>
+                    <h3 class="subheading">Accompaniment And Advocacy</h3>
                         <div class="checkbox subgroup">
                             <label><input type="checkbox" name="confidentialAdvocate">Confidential Advocate</label>
                             <br/>
@@ -565,7 +575,7 @@
                             <label><input type="checkbox" name="crimeVictimRightsAttorney">Crime Victims Right Attorney</label>
                             <br/>
                         </div>
-                    <h4>Accompaniment Advocacy Provided To:</h4>
+                    <h3 class="subheading">Accompaniment Advocacy Provided To:</h3>
                         <div class="checkbox subgroup">
                             <label><input type="checkbox" name="socialServicesAppointment">Social Service Appointment</label>
                             <br/>
@@ -598,7 +608,7 @@
      <hr></hr>
             <h3>Which Of These Long Term Services Do You Provide?</h3>
                   <div class="checkbox">
-                    <h4>Case Management</h4>
+                    <h3 class="subheading">Case Management</h3>
                         <div class="checkbox subgroup">
                             <label><input type="checkbox" name="confidentialCaseManagement">Confidential</label>
                             <br/>
@@ -613,7 +623,7 @@
                     <br/>
                     <label><input type="checkbox" name="transportationAssistance">Transportation Assistance</label>
                     <br/>
-                    <h4>Rental Assistance</h4>
+                    <h3 class="subheading">Rental Assistance</h3>
                         <div class="checkbox subgroup">
                             <label><input type="checkbox" name="firstMonthsRent">Assistance With First Month's Rent</label>
                             <br/>
@@ -659,7 +669,7 @@
                     <label><input type="checkbox" name="mentorship">Mentorship
                    </label>
                     <br/>
-                    <h4>Legal Assistance</h4>
+                    <h3 class="subheading">Legal Assistance</h3>
                       <div class="checkbox subgroup">
                           <label><input type="checkbox" name="immigration">Assistance With First Month's Rent</label>
                           <br/>
@@ -704,6 +714,7 @@
      <h3>If you provide services to HT survivors which have not already been mentioned, please explain:</h3>
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="Other Services (be brief but descriptive)" id="otherServices">
+                <br/>
            </div>
             <br/>
     <h3>Other HT Trainings:</h3>
@@ -740,7 +751,7 @@
                 <br/>
                 <label><input type="checkbox" name="crimeVictimRights">Crime Victim Rights</label>
                 <br/>
-                <h4>Profession Specific</h4>
+                <h3 class="subheading">Profession Specific</h3>
                     <div class="checkbox subgroup">
                         <label><input type="checkbox" name="legal">Legal</label>
                         <br/>

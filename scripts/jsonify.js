@@ -30,7 +30,21 @@ var jsonify = function(){
         'Circumstances':'circumstances',
         'Case Management':'caseManagement',
         'Which Of These Long Term Services Do You Provide?':'longTermServices',
-        'Rental Assistance':'rentalAssistance'
+        'Rental Assistance':'rentalAssistance',
+        'Legal Assistance':'legalAssistanceSpecifics',
+        'Profession Specific':'professionSpecific',
+        'Accompaniment And Advocacy':'accompanimentAndAdvocacy',
+        'Accompaniment Advocacy Provided To:':'accompanimentAdvocacyProvidedTo',
+        'Which HT Related Trainings Do You Provide?':'htRelatedTrainingsNeeded',
+        'Other HT Trainings:':'otherHTTrainings',
+        'Other Shelter Specifications':'otherShelterSpecifications',
+        'Other Housing Specifications':'otherHousingSpecifications',
+        'Gender Of Responder':'genderOfResponder',
+        'What populations do you target/have specialized services for? (check all that apply)':'targetedPopulations',
+        'Categories of Victims Served':'typeOfVictimsServed',
+        'Screening for human trafficking cases':'screenForHumanTrafficking',
+        'Where Are You Located?':'location'
+
     }
     var category;
     /* finds text input boxes */
@@ -50,7 +64,7 @@ var jsonify = function(){
             }
         });
     });
-    //change it back to the way it was
+
     $('div.checkbox').each(function(){
         if($(this).prev('h3')){
             category = mapToCategory[$(this).prev('h3').text()];
@@ -68,6 +82,7 @@ var jsonify = function(){
         });
         object[category] = group;
     });
+
     $('div.radio').each(function(){
         if($(this).prev('h3'))
             category = mapToCategory[$(this).prev('h3').text()];
